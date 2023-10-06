@@ -33,48 +33,6 @@ python run_exp.py --zo_opt rgf --correction diff --exp Quadratic --div 0.5 --ite
 python run_exp.py --zo_opt rgf --correction prox --exp Quadratic --div 0.5 --iters 10 --rounds 50
 python run_exp.py --zo_opt rgf --correction scaf --exp Quadratic --div 0.5 --iters 10 --rounds 50
 python run_exp.py --zo_opt fzoos --correction rff --exp Quadratic --div 0.5 --iters 10 --rounds 50
-
-
-python run_exp.py --zo_opt rgf --correction none --exp Quadratic --div 5 --iters 10 --rounds 50
-python run_exp.py --zo_opt rgf --correction diff --exp Quadratic --div 5 --iters 10 --rounds 50
-python run_exp.py --zo_opt rgf --correction prox --exp Quadratic --div 5 --iters 10 --rounds 50
-python run_exp.py --zo_opt rgf --correction scaf --exp Quadratic --div 5 --iters 10 --rounds 50
-python run_exp.py --zo_opt fzoos --correction rff --exp Quadratic --div 5 --iters 10 --rounds 50
-
-
-python run_exp.py --zo_opt rgf --correction none --exp Quadratic --div 50 --iters 20 --rounds 50
-python run_exp.py --zo_opt rgf --correction diff --exp Quadratic --div 50 --iters 20 --rounds 50
-python run_exp.py --zo_opt rgf --correction prox --exp Quadratic --div 50 --iters 20 --rounds 50
-python run_exp.py --zo_opt rgf --correction scaf --exp Quadratic --div 50 --iters 20 --rounds 50
-python run_exp.py --zo_opt fzoos --correction rff --exp Quadratic --div 50 --iters 20 --rounds 50
-
-
-python run_exp.py --zo_opt rgf --correction none --exp Quadratic --div 5 --iters 5 --rounds 50
-python run_exp.py --zo_opt rgf --correction diff --exp Quadratic --div 5 --iters 5 --rounds 50
-python run_exp.py --zo_opt rgf --correction prox --exp Quadratic --div 5 --iters 5 --rounds 50
-python run_exp.py --zo_opt rgf --correction scaf --exp Quadratic --div 5 --iters 5 --rounds 50
-python run_exp.py --zo_opt fzoos --correction rff --exp Quadratic --div 5 --iters 5 --rounds 50
-
-
-python run_exp.py --zo_opt rgf --correction none --exp Quadratic --div 5 --iters 20 --rounds 50
-python run_exp.py --zo_opt rgf --correction diff --exp Quadratic --div 5 --iters 20 --rounds 50
-python run_exp.py --zo_opt rgf --correction prox --exp Quadratic --div 5 --iters 20 --rounds 50
-python run_exp.py --zo_opt rgf --correction scaf --exp Quadratic --div 5 --iters 20 --rounds 50
-python run_exp.py --zo_opt fzoos --correction rff --exp Quadratic --div 5 --iters 20 --rounds 50
-
-
-python run_exp.py --zo_opt rgf --correction none --exp Levy --div 0.5 --iters 5 --rounds 50
-python run_exp.py --zo_opt rgf --correction diff --exp Levy --div 0.5 --iters 5 --rounds 50
-python run_exp.py --zo_opt rgf --correction prox --exp Levy --div 0.5 --iters 5 --rounds 50
-python run_exp.py --zo_opt rgf --correction scaf --exp Levy --div 0.5 --iters 5 --rounds 50
-python run_exp.py --zo_opt fzoos --correction rff --exp Levy --div 0.5 --iters 5 --rounds 50
-
-
-python run_exp.py --zo_opt rgf --correction none --exp Ackley --div 0.5 --iters 5 --rounds 50
-python run_exp.py --zo_opt rgf --correction diff --exp Ackley --div 0.5 --iters 5 --rounds 50
-python run_exp.py --zo_opt rgf --correction prox --exp Ackley --div 0.5 --iters 5 --rounds 50
-python run_exp.py --zo_opt rgf --correction scaf --exp Ackley --div 0.5 --iters 5 --rounds 50
-python run_exp.py --zo_opt fzoos --correction rff --exp Ackley --div 0.5 --iters 5 --rounds 50
 ```
 
 ### 3.2 Federated black-box adversarial attack
@@ -87,30 +45,6 @@ CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --di
 CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt rgf --correction prox --ckpts 'funcs/attack/ckpts/0.5' --portion 0.5 --iters 10 --trials 15 --rounds 150 --targeted 0
 CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt rgf --correction scaf --ckpts 'funcs/attack/ckpts/0.5' --portion 0.5 --iters 10 --trials 15 --rounds 150 --targeted 0
 CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt fzoos --correction rff --ckpts 'funcs/attack/ckpts/0.5' --portion 0.5 --iters 10 --trials 15 --rounds 150 --targeted 0
-
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt rgf --correction none --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 5 --trials 15 --rounds 150 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt rgf --correction diff --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 5 --trials 15 --rounds 150 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt rgf --correction prox --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 5 --trials 15 --rounds 150 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt rgf --correction scaf --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 5 --trials 15 --rounds 150 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt fzoos --correction rff --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 5 --trials 15 --rounds 150 --targeted 0
-
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt rgf --correction none --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 10 --trials 15 --rounds 150 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt rgf --correction diff --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 10 --trials 15 --rounds 150 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt rgf --correction prox --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 10 --trials 15 --rounds 150 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt rgf --correction scaf --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 10 --trials 15 --rounds 150 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt fzoos --correction rff --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 10 --trials 15 --rounds 150 --targeted 0
-
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt rgf --correction none --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 20 --trials 15 --rounds 150 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt rgf --correction diff --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 20 --trials 15 --rounds 150 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt rgf --correction prox --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 20 --trials 15 --rounds 150 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt rgf --correction scaf --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 20 --trials 15 --rounds 150 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt fzoos --correction rff --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 20 --trials 15 --rounds 150 --targeted 0
-
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt rgf --correction none --ckpts 'funcs/attack/ckpts/0.9' --portion 0.9 --iters 10 --trials 15 --rounds 150 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt rgf --correction diff --ckpts 'funcs/attack/ckpts/0.9' --portion 0.9 --iters 10 --trials 15 --rounds 150 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt rgf --correction prox --ckpts 'funcs/attack/ckpts/0.9' --portion 0.9 --iters 10 --trials 15 --rounds 150 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt rgf --correction scaf --ckpts 'funcs/attack/ckpts/0.9' --portion 0.9 --iters 10 --trials 15 --rounds 150 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp CIFAR10_Attack --n_funcs 10 --dim 1024 --zo_opt fzoos --correction rff --ckpts 'funcs/attack/ckpts/0.9' --portion 0.9 --iters 10 --trials 15 --rounds 150 --targeted 0
 ```
 #### b) MNIST
 ```
@@ -119,30 +53,6 @@ CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 
 CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt rgf --correction prox --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 5 --trials 15 --rounds 100 --targeted 0
 CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt rgf --correction scaf --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 5 --trials 15 --rounds 100 --targeted 0
 CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt fzoos --correction rff --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 5 --trials 15 --rounds 100 --targeted 0
-
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt rgf --correction none --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 10 --trials 15 --rounds 100 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt rgf --correction diff --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 10 --trials 15 --rounds 100 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt rgf --correction prox --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 10 --trials 15 --rounds 100 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt rgf --correction scaf --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 10 --trials 15 --rounds 100 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt fzoos --correction rff --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 10 --trials 15 --rounds 100 --targeted 0
-
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt rgf --correction none --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 20 --trials 15 --rounds 100 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt rgf --correction diff --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 20 --trials 15 --rounds 100 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt rgf --correction prox --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 20 --trials 15 --rounds 100 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt rgf --correction scaf --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 20 --trials 15 --rounds 100 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt fzoos --correction rff --ckpts 'funcs/attack/ckpts/0.7' --portion 0.7 --iters 20 --trials 15 --rounds 100 --targeted 0
-
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt rgf --correction none --ckpts 'funcs/attack/ckpts/0.5' --portion 0.5 --iters 10 --trials 15 --rounds 100 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt rgf --correction diff --ckpts 'funcs/attack/ckpts/0.5' --portion 0.5 --iters 10 --trials 15 --rounds 100 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt rgf --correction prox --ckpts 'funcs/attack/ckpts/0.5' --portion 0.5 --iters 10 --trials 15 --rounds 100 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt rgf --correction scaf --ckpts 'funcs/attack/ckpts/0.5' --portion 0.5 --iters 10 --trials 15 --rounds 100 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt fzoos --correction rff --ckpts 'funcs/attack/ckpts/0.5' --portion 0.5 --iters 10 --trials 15 --rounds 100 --targeted 0
-
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt rgf --correction none --ckpts 'funcs/attack/ckpts/0.9' --portion 0.9 --iters 10 --trials 15 --rounds 100 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt rgf --correction diff --ckpts 'funcs/attack/ckpts/0.9' --portion 0.9 --iters 10 --trials 15 --rounds 100 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt rgf --correction prox --ckpts 'funcs/attack/ckpts/0.9' --portion 0.9 --iters 10 --trials 15 --rounds 100 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt rgf --correction scaf --ckpts 'funcs/attack/ckpts/0.9' --portion 0.9 --iters 10 --trials 15 --rounds 100 --targeted 0
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MNIST_Attack --n_funcs 10 --dim 784 --zo_opt fzoos --correction rff --ckpts 'funcs/attack/ckpts/0.9' --portion 0.9 --iters 10 --trials 15 --rounds 100 --targeted 0
 ```
 ### 3.3 Federated non-differentiable metric optimization
 ```
@@ -151,29 +61,5 @@ CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187
 CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt rgf --correction prox --portion 0.3 --iters 10 --trials 5 --score_name precision_score
 CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt rgf --correction scaf --portion 0.3 --iters 10 --trials 5 --score_name precision_score
 CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt fzoos --correction rff --portion 0.3 --iters 10 --trials 5 --score_name precision_score
-
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt rgf --correction none --portion 0.6 --iters 5 --trials 5 --score_name precision_score
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt rgf --correction diff --portion 0.6 --iters 5 --trials 5 --score_name precision_score
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt rgf --correction prox --portion 0.6 --iters 5 --trials 5 --score_name precision_score
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt rgf --correction scaf --portion 0.6 --iters 5 --trials 5 --score_name precision_score
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt fzoos --correction rff --portion 0.6 --iters 5 --trials 5 --score_name precision_score
-
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt rgf --correction none --portion 0.6 --iters 10 --trials 5 --score_name precision_score
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt rgf --correction diff --portion 0.6 --iters 10 --trials 5 --score_name precision_score
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt rgf --correction prox --portion 0.6 --iters 10 --trials 5 --score_name precision_score
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt rgf --correction scaf --portion 0.6 --iters 10 --trials 5 --score_name precision_score
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt fzoos --correction rff --portion 0.6 --iters 10 --trials 5 --score_name precision_score
-
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt rgf --correction none --portion 0.6 --iters 20 --trials 5 --score_name precision_score
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt rgf --correction diff --portion 0.6 --iters 20 --trials 5 --score_name precision_score
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt rgf --correction prox --portion 0.6 --iters 20 --trials 5 --score_name precision_score
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt rgf --correction scaf --portion 0.6 --iters 20 --trials 5 --score_name precision_score
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt fzoos --correction rff --portion 0.6 --iters 20 --trials 5 --score_name precision_score
-
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt rgf --correction none --portion 0.9 --iters 10 --trials 5 --score_name precision_score
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt rgf --correction diff --portion 0.9 --iters 10 --trials 5 --score_name precision_score
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt rgf --correction prox --portion 0.9 --iters 10 --trials 5 --score_name precision_score
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt rgf --correction scaf --portion 0.9 --iters 10 --trials 5 --score_name precision_score
-CUDA_VISIBLE_DEVICES="" python run_exp.py --exp MetricOpt --n_funcs 7 --dim 2187 --zo_opt fzoos --correction rff --portion 0.9 --iters 10 --trials 5 --score_name precision_score
 ```
 Change the option `--score_name` to `recall_score`, `jaccard_score`, `f1_score` to run the experiments for different metrics.
